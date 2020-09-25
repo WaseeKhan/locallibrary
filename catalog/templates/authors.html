@@ -1,23 +1,18 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-
-<h2>Total Number of Book in Local Library : {{ all_instances }}</h2>
-
-
+<h2>Total Number of Authors in Local Library : {{ num_authors }}</h2>
 <table border="1">
     <thead>
-
     <tr>
         <th>Book Name</th>
     </tr>
-    {% for all_books_lists in all_books_list %}
+    {% for authors in list_authors %}
     <tr>
-        <td>{{ all_books_lists }}</td>
+        <td>{{ authors }}</td>
     </tr>
     {% endfor %}
     </thead>
 </table>
-
 
 {% endblock %}
